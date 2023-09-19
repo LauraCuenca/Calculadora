@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <br>
+    <h1>Calculadora</h1>
+    <form method="POST">
+        <label for="operation">Operación:</label>
+        <select name="operation">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="*">Multiplicación</option>
+            <option value="/">División</option>
+        </select>
+        <br>
+        <label for="num_1">Primer número:</label>
+        <input type="text" name="num_1">
+        <br>
+        <label for="num_2">Segundo número:</label>
+        <input type="text" name="num_2">
+        <br>
+        <input type="submit" value="Calcular" class="boton-calcular">
+    </form>
+    <br>
+
+    <div class="resultado-box">
+        Resultado: {{ resultado }}
+    </div>
+    <br><br>
+
+    <footer>
+        <p>© 2023 Calculadora Grupo 13</p>
+        <ul class="sin-viñetas">
+            <li><a href="https://github.com/Fuwanto">Github Antonella Cuenca</a></li>
+            <li><a href="https://github.com/LauraCuenca">Github Laura Cuenca</a></li>
+            <li><a href="https://github.com/Ationno">Github Antonio Felix Glorioso Ceretti </a></li>
+            <li><a href="https://github.com/agusrnfr">Github Agustina Rojas</a></li>
+
+        </ul>
+    </footer>
+    
+    
+</body>
+</html>
